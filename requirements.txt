@@ -1,0 +1,10 @@
+elevenlabs
+opencv-python-headless
+numpy
+langchain_google_genai
+langchain_core
+langchain
+pydantic
+pytesseract
+langgraph
+streamlit
