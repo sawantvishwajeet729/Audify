@@ -18,7 +18,7 @@ st.set_page_config(
 
 # --- Sidebar ---
 with st.sidebar:
-    st.image("/Users/vishwajeetsawant/Work/audiobook/artifacts/audfy logo.jpeg", width=120)
+    st.image("artifacts/audfy logo.jpeg", width=120)
     st.header("How It Works")
     st.markdown("""
 **Audify** is your personal AI audio producer. Here’s how you can create your audiobook snippet:
@@ -37,7 +37,7 @@ with st.sidebar:
 """)
 
 # --- Main Page ---
-st.image("/Users/vishwajeetsawant/Work/audiobook/artifacts/audify banner.jpeg", width='stretch')
+st.image("artifacts/audify banner.jpeg", width='stretch')
 st.title("Audify 🎙️")
 st.markdown("### Turn any book page into a multi-character audiobook snippet.")
 st.write("---")
