@@ -95,16 +95,16 @@ st.markdown("""
 # 2. PREPARE YOUR IMAGE DATA (using local paths)
 # IMPORTANT: Create an 'assets' folder and place your images there.
 characters = [
-    {"name": "Sarah", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Sarah.png"},
-    {"name": "Roger", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Roger.png"},
-    {"name": "Rachel", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Rachel.png"},
-    {"name": "Paul", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Paul.png"},
-    {"name": "Fin", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Fin.png"},
-    {"name": "Drew", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Drew.png"},
-    {"name": "Domi", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Domi.png"},
-    {"name": "Dave", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Dave.png"},
-    {"name": "Aria", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Aria.png"},
-    {"name": "Clyde", "local_path": "/Users/vishwajeetsawant/Work/audiobook/artifacts/Clyde.png"},
+    {"name": "Sarah", "local_path": "artifacts/Sarah.png"},
+    {"name": "Roger", "local_path": "artifacts/Roger.png"},
+    {"name": "Rachel", "local_path": "artifacts/Rachel.png"},
+    {"name": "Paul", "local_path": "artifacts/Paul.png"},
+    {"name": "Fin", "local_path": "artifacts/Fin.png"},
+    {"name": "Drew", "local_path": "artifacts/Drew.png"},
+    {"name": "Domi", "local_path": "artifacts/Domi.png"},
+    {"name": "Dave", "local_path": "artifacts/Dave.png"},
+    {"name": "Aria", "local_path": "artifacts/Aria.png"},
+    {"name": "Clyde", "local_path": "artifacts/Clyde.png"},
 ]
 
 # Create placeholder images if assets don't exist (for demonstration)
