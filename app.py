@@ -125,8 +125,10 @@ def character_identifier(state: ResearchState):
         characters: Dict[str, Dict[str, Any]] = Field(
             ..., description="Dictionary of characters where key is character name and value is a dictionary of properties"
         )
-        page_number: int = Field(..., description="Page number of the scanned image")
+        # This field can now be an integer or None.
+        page_number: int | None = Field(None, description="Page number of the scanned image, or null if not found")
         new_charachter_identifed: str = Field(..., description="Binary response in Yes or No")
+
 
     # 2. Create parser
     ocr_parser = PydanticOutputParser(pydantic_object=OcrOutput)
