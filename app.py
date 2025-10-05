@@ -142,13 +142,13 @@ def character_identifier(state: ResearchState):
         1. Read through the text and correct the spelling where required and return the corrected text.
         2. Identify if a new character is introduced in the text with reference to the list of characters already available in context. here is the list of existing charachters {charachter_list}. If there is a new charachter other than the ones in the charachter_list, respond with Yes in the new_charachter_identifed field.
         3. For the new characters, identify their properties like Gender, Age, or any physical characteristics. 
-        4. identify the page number from the text.
+        4. identify the page number from the text. return an interger and not a string.
 
         Return ONLY valid JSON (no extra text, no markdown, no commentary).
         Required fields:
         1. corrected_text → corrected text
         2. characters → dictionary where keys are character names and values are their properties
-        3. page_number → page number
+        3. page_number → page number (integer only)
         4. new_charachter_identifed → Binary response (Yes or No)
 
         Here is the text from a page which is part of a book. {text}
