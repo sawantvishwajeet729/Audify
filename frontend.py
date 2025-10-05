@@ -220,6 +220,7 @@ with col2:
         st.write(os.listdir())
         
         final_path = st.session_state.final_audio_path
+        st.write(final_path)
         if os.path.exists(final_path):
             st.audio(final_path)
             with open(final_path, "rb") as f:
