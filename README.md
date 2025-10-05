@@ -264,7 +264,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions, issues, or extended version inquiries, please:
 - Open an issue on GitHub
 - Visit the [website](https://vishwajeetsawant.lovable.app)
-- Check the FAQ section below
 
 ---
 
