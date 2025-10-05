@@ -453,6 +453,7 @@ def mp3_combine(state: ResearchState):
     # 2. Get the MP3 files and filter out other files
     try:
         files = [f for f in os.listdir(output_path) if f.endswith('.mp3')]
+        print(files) #
     except FileNotFoundError:
         print(f"Error: The directory '{output_path}' does not exist.")
         return
@@ -465,6 +466,7 @@ def mp3_combine(state: ResearchState):
         return int(s.group()) if s else -1
         
     files.sort(key=get_filenumber)
+    print(files)#
 
     # 4. Create a temporary file list for ffmpeg
     file_list_path = "file_list.txt"
