@@ -217,6 +217,7 @@ with col2:
     if st.session_state.final_audio_path:
         print("final mp3 ready")
         st.write(os.listdir(audio_clips))
+        st.write(f"final path {st.session_state.final_audio_path}, final_state_path: {final_state.get("final_audio_path")}")
         st.success("✨ Your audiobook is ready!")
         
         final_path = st.session_state.final_audio_path
