@@ -217,10 +217,8 @@ with col2:
     if st.session_state.final_audio_path:
         print("final mp3 ready")
         st.success("✨ Your audiobook is ready!")
-        st.write(os.listdir())
         
         final_path = st.session_state.final_audio_path
-        st.write(final_path)
         if os.path.exists(final_path):
             st.audio(final_path)
             with open(final_path, "rb") as f:
