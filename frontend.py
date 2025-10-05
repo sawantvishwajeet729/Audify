@@ -216,8 +216,6 @@ with col2:
 
     if st.session_state.final_audio_path:
         print("final mp3 ready")
-        #st.write(os.listdir(audio_clips))
-        st.write(f"final path {st.session_state.final_audio_path}")
         st.success("✨ Your audiobook is ready!")
         
         final_path = st.session_state.final_audio_path
@@ -233,6 +231,7 @@ with col2:
                 )
         else:
             st.error("The final audio file could not be found.")
+            st.write(os.listdir(audio_clips))
 
 st.info("This is a free version of Audify and hence the generated audio is of limited lenght. Please reach out to me on my [website](%s) for extended version."  % website_url, icon="ℹ️", width='stretch')
 
