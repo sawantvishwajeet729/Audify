@@ -453,6 +453,7 @@ def mp3_combine(state: ResearchState):
     # 2. Get the MP3 files and filter out other files
     try:
         files = [f for f in os.listdir(output_path) if f.endswith('.mp3')]
+        print(files)
     except FileNotFoundError:
         print(f"Error: The directory '{output_path}' does not exist.")
         return
