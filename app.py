@@ -412,7 +412,7 @@ def voice_generator(state: ResearchState):
     counter = 0 # remove the counter logic to generate the audio of entire page. currently limited since I am using free tier ElevenLabs subscription.
 
     for i, dialogue_ in enumerate(json_obj):
-        if counter <2:
+        if counter <5:
             speaker = dialogue_['speaker']
 
             if speaker in speakerXid.keys():
