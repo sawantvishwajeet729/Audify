@@ -126,7 +126,7 @@ def character_identifier(state: ResearchState):
             ..., description="Dictionary of characters where key is character name and value is a dictionary of properties"
         )
         # This field can now be an integer or None.
-        page_number: int | None = Field(None, description="Page number of the scanned image, or null if not found")
+        page_number: int | None | str = Field(None, description="Page number of the scanned image, or null if not found")
         new_charachter_identifed: str = Field(..., description="Binary response in Yes or No")
 
 
