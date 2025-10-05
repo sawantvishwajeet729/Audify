@@ -13,7 +13,7 @@ from elevenlabs import save
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
 from pydantic import BaseModel, Field
-from typing import Dict, Any
+from typing import Dict, Any, Union
 from langchain.output_parsers import PydanticOutputParser
 import streamlit as st
 
@@ -125,10 +125,11 @@ def character_identifier(state: ResearchState):
         characters: Dict[str, Dict[str, Any]] = Field(
             ..., description="Dictionary of characters where key is character name and value is a dictionary of properties"
         )
-        # This field can now be an integer or None.
-        page_number: int | None | str = Field(None, description="Page number of the scanned image, or null if not found")
+        page_number: Union[int, str, None] = Field(
+        default=None, 
+        description="Page number of the scanned image (can be a number, text like 'i', or null)"
+        )
         new_charachter_identifed: str = Field(..., description="Binary response in Yes or No")
-
 
     # 2. Create parser
     ocr_parser = PydanticOutputParser(pydantic_object=OcrOutput)
