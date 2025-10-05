@@ -8,3 +8,4 @@ pydantic
 pytesseract
 langgraph
 streamlit
+ffmpeg

@@ -231,7 +231,6 @@ with col2:
                 )
         else:
             st.error("The final audio file could not be found.")
-            st.write(os.listdir("audio_clips"))
 
 st.info("This is a free version of Audify and hence the generated audio is of limited lenght. Please reach out to me on my [website](%s) for extended version."  % website_url, icon="ℹ️", width='stretch')
 
