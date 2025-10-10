@@ -179,8 +179,7 @@ st.download_button(
                     label="Sample image for testing",
                     data="artifacts/Sample.png",
                     file_name="Sample image",
-                    mime="png",
-                    width='stretch'
+                    mime="png"
                 )
 uploaded_file = st.file_uploader("Upload an image of a book page", type=["jpg", "png", "jpeg"])
 
