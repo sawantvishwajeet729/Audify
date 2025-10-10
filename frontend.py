@@ -36,15 +36,7 @@ with st.sidebar:
 6.  **Final Audiobook:** All audio clips are seamlessly combined into your finished audiobook, ready to be played and downloaded.
 """)
 
-    #Sample image for download
     st.write("---")
-    st.download_button(
-                    label="Sample image for testing",
-                    data="artifacts/Sample.png",
-                    file_name="Sample image",
-                    mime="png",
-                    width='stretch'
-                )
     
 
 # --- Main Page ---
@@ -175,6 +167,16 @@ st.markdown("---")
 
 #upload the image of book or novel
 st.subheader("Upload the image")
+
+# A sample image from Alice in the wonderland
+st.markdown("""
+<style>
+.stDownloadButton > button {
+    background-color: #4CAF50; /* A nice shade of green */
+    color: white; /* Text color */
+}
+</style>
+""", unsafe_allow_html=True)
 st.download_button(
                     label="Sample image for testing",
                     data="artifacts/Sample.png",
