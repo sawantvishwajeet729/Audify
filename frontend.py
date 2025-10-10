@@ -175,6 +175,13 @@ st.markdown("---")
 
 #upload the image of book or novel
 st.subheader("Upload the image")
+st.download_button(
+                    label="Sample image for testing",
+                    data="artifacts/Sample.png",
+                    file_name="Sample image",
+                    mime="png",
+                    width='stretch'
+                )
 uploaded_file = st.file_uploader("Upload an image of a book page", type=["jpg", "png", "jpeg"])
 
 #Copyright Warning
