@@ -36,11 +36,22 @@ with st.sidebar:
 6.  **Final Audiobook:** All audio clips are seamlessly combined into your finished audiobook, ready to be played and downloaded.
 """)
 
+    #Sample image for download
+    st.write("---")
+    
+
 # --- Main Page ---
 st.image("artifacts/audify banner.jpeg", width='stretch')
 st.title("Audify 🎙️")
 st.markdown("### Turn any book page into a multi-character audiobook snippet.")
 st.write("---")
+st.download_button(
+                    label="Sample image for testing",
+                    data=f,
+                    file_name="artifacts/Sample.png",
+                    mime="audio/mpeg",
+                    width='stretch'
+                )
 
 
 # Initialize session state
@@ -164,6 +175,7 @@ if selected_character:
 st.markdown("---")
 
 #upload the image of book or novel
+st.subheader("Upload the image")
 uploaded_file = st.file_uploader("Upload an image of a book page", type=["jpg", "png", "jpeg"])
 
 #Copyright Warning
