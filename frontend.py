@@ -38,6 +38,13 @@ with st.sidebar:
 
     #Sample image for download
     st.write("---")
+    st.download_button(
+                    label="Sample image for testing",
+                    data="artifacts/Sample.png",
+                    file_name="Sample image",
+                    mime="png",
+                    width='stretch'
+                )
     
 
 # --- Main Page ---
@@ -45,14 +52,6 @@ st.image("artifacts/audify banner.jpeg", width='stretch')
 st.title("Audify 🎙️")
 st.markdown("### Turn any book page into a multi-character audiobook snippet.")
 st.write("---")
-st.download_button(
-                    label="Sample image for testing",
-                    data="artifacts/Sample.png",
-                    file_name="Sample image",
-                    mime="png",
-                    width='stretch'
-                )
-
 
 # Initialize session state
 if 'final_audio_path' not in st.session_state:
