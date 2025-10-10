@@ -47,9 +47,9 @@ st.markdown("### Turn any book page into a multi-character audiobook snippet.")
 st.write("---")
 st.download_button(
                     label="Sample image for testing",
-                    data=f,
-                    file_name="artifacts/Sample.png",
-                    mime="audio/mpeg",
+                    data="artifacts/Sample.png",
+                    file_name="Sample image",
+                    mime="png",
                     width='stretch'
                 )
 
